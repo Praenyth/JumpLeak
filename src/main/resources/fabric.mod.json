@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "jumpleak",
+  "version": "${version}",
+
+  "name": "JumpLeak",
+  "description": "Jump once and your ip is out there!",
+  "authors": [
+    "Prae"
+  ],
+  "contact": {
+    "homepage": "https://fabricmc.net/",
+    "sources": "https://github.com/FabricMC/fabric-example-mod"
+  },
+
+  "license": "MIT",
+  "icon": "assets/jumpleak/icon.png",
+
+  "environment": "client",
+  "entrypoints": {
+    "main": [
+      "me.praenyth.mods.jumpleak.JumpLeak"
+    ]
+  },
+  "mixins": [
+    "jumpleak.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.14.9",
+    "fabric-api": "*",
+    "minecraft": "~1.19",
+    "java": ">=17"
+  }
+}
